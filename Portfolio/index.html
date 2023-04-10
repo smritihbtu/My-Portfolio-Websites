@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Personal Portfolio Website
+        </title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js "></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+        <script src="https://kit.fontawesome.com/06b7fd9bb3.js" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" />
+    </head>
+    <body>
+        <div class="scroll-up-btn">
+            <i class="fas fa-angle-up"></i>
+        </div>
+
+        <!-- home section  -->
+
+        <section class="home" id="home" style="padding:0px"> 
+            <!-- navbar container -->
+            <nav class="navbar">
+                <div class="max-width">
+                    <div class="logo"> <a href="#">Portfo<span>lio.</span></a></div>
+                        <ul class="menu">
+                            <span class="close-menu" style="cursor:pointer;font-size:25px;color:white;position:absolute;top:5px;right:5px;"><b>&times;</b></span>
+                            <li><a href="#home" class="menu-btn"><i class="fas fa-home"></i>Home</a></li>
+                            <li><a href="#about" class="menu-btn"><i class = "fa fa-info-circle"></i>About</a></li>
+                            <li><a href="#services" class="menu-btn"><i class = "fas fa-file-alt"></i>Services</a></li>
+                            <li><a href="#myskills" class="menu-btn"><i class =" fas fa-book-open"></i>Skills</a></li>
+                            <li><a href="#teams" class="menu-btn"><i class =" fas fa-user-friends"></i>Teams</a></li>
+                            <li><a href="#myportfolio" class="menu-btn"><i class =" fas fa-laptop-code"></i>My works</a></li>
+                            <li><a href="#contact" class="menu-btn"><i class = " fa fa-phone"></i>Contacts</a></li>
+                             <!-- <a href ="#">Hire me</a>  -->
+                        </ul>
+                         <div class = "menu-btn"> 
+                            <i class="fas fa-bars"></i>
+                         </div> 
+                    </div> 
+            </nav>
+
+
+            <!-- home-page container -->
+            
+             <div class="" style="display: flex;width:100vw;height: 90vh;  background: url(image/black.webp); opacity: 0.9">
+              <!-- left side (text-container) -->
+                 <div class="home-content" style="padding: 25px;padding-left:30px;margin-top:5%;width:50vw;"> 
+                <div class="text-1">Hello,my name is</div>
+                <div class="text-2">Smriti Gupta</div>
+                <div class="text-3">And I'm a <span class="typing"> Software Developer </span> </div>
+                <a href ="#">Hire me</a>
+               </div>
+            <!-- right side (image container)-->
+               <div class="right-side"><img src="image/me.png" width="70%" height="100%" style="padding-top:3%;margin-left: 20%"></div>
+            </div>
+            </section>
+           
+
+            <!-- About section start -->
+            <section class="about" id="about">
+                <h2 class = "title">About me</h2>
+                <div class="max-width">
+                <div class="about-content"style="padding:0 5vw;">
+                <div class = "column left">
+                <img src="image/B612_20220824_085117_218.jpg"alt="" >
+                </div>
+                <div class="column right">
+                    <div class="text">Hey!</div>
+                    <div class="text">I'm Smriti Gupta and I'm a <span class="typing-2">Software Developer</span></div>
+                   <h3> <p> I started my coding journey almost exactly a year ago and now I'm working full time and doing freelance.</p></h3>
+                   <h5><p>I love combining the world of logic and creative design to make eye-catching , accessible , and user-friendly wbesites and applications.</p></h5>
+                   <h5><p>Technology leads, society follows . The move towards increasing inclusivity and diversity in the industry through representation is of importance of me.</p></h5>
+
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('educations')">Educations</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('e-mail')">e-mail</p>
+                        <!-- <p class="tab-links" onclick="opentab('e-mail')">e-mail</p> -->
+                    </div> 
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>DevOps</span><br>Azure,cloud</li>
+                            <li><span>Web Develoment</span><br>Design a page</li>
+                            <li><span>LINUX/UNIX</span><br>Enthusiastic</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="educations">
+                        <ul>
+                            <li><span>2019-2022</span><br>MCA From Harcourt Butler Technical University</li>
+                            <li><span>2016-2019</span><br>BCA From Rajarashi School of Management And Technology</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>1yr+<b> NAGARRO </b></span><br>Experience in  FULL-STACK</li>
+                            <li><span>2019</span><br>Core java from COURSERA</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="e-mail">
+                        <ul>
+                            <li><span>e-mail</e-mail></span><br>smritihbtu2022@gmail.com</li>
+                        </ul>
+                    </div>
+                    <a href="./smritiresumre23.pdf">Download CV</a>
+                </div>
+                </div>
+                </div>
+            </section>
+
+
+             <!-- Services section start -->
+             <section class="services" id="services">
+                <div class="max-width"></div>
+                <h2 class = "title">My services</h2>
+                <!-- <div class="max-width"> -->
+                <div class="serv-content" style="padding:0 5vw;">
+                    <div class="card">
+                    <div class = "box">
+                        <i class="fas fa-paint-brush"></i>
+                        <div class="text">Web Design</div>
+                        <p>Web design encompasses many different skills and disciplines in the production and maintenance of websites.</p>
+                        <a href="#">learn more...</a>
+                    </div>
+                    </div>
+
+                 <div class="card">
+                        <div class = "box">
+                            <i class="fas fa-code"></i>
+                            <div class="text">Web-Development</div>
+                            <p>Web Develoment is the work involved in developing a website for the Internet or Intranet </p>
+                            <a href="#">learn more...</a>
+                        </div>
+                    </div>
+
+                <div class="card">
+                    <div class = "box">
+                         <i class="fa-solid fa-gears"></i>
+                         <div class="text">DevOps</div>
+                         <p> DevOps emphasizes people(and culture), and seeks to improve collaboration between operations and development teams.</p>
+                         <a href="#">learn more..</a>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Skills section start -->
+    <section class="myskills" id="myskills">
+        <div class="max-width">
+           <h2 class="title">My Skills</h2>
+           <div class="skills-content" style="padding:0 5vw;">
+            <div class="column left">
+                <div class="text">My Creative Skills And Experiences</div>
+                <P>I have 1+ yr Experience in Nagarro.I have done project on spring with java and also one project on React Native.<br><b>ALGORITHM :</b> Data Structure <br><b>TOOLS/LIBRARIES :</b>Git,Intellij,Maven,API,Spring<br><b>Dev-Ops :</b>Azure,Jenkins,Linux,Github<br><b>DEVELOPMENT/FRAMEWORK:</b>Angular,React,ReactNative,Node<br><b>PROGRAMMING LANGUAGES:</b>Java/c/c++</P>
+                <a href="#">Read more..</a>
+            </div>
+            <div class="column right">
+                <div class="bars">
+                    <div class="info">
+                        <span>HTML5,CSS,JS</span>
+                        <span>90%</span>
+                        <!-- <div class="Line html"></div> -->
+                    </div>
+                    <div class="Line html"></div>
+                </div>
+                <div class="bars">
+                    <div class="info">
+                        <span>Java,C++,c</span>
+                        <span>90%</span>
+                        <!-- <div class="Line css"></div> -->
+                    </div>
+                    <div class="Line css"></div>
+                </div>
+                <div class="bars">
+                    <div class="info">
+                        <span>React js ,Angular ,node Js</span>
+                        <span>50%</span>
+                        <!-- <div class="Line reactjs"></div> -->
+                    </div>
+                    <div class="Line reactjs"></div>
+                </div>
+                <div class="bars">
+                    <div class="info">
+                        <span>Spring ,Hibernate ,MAVEN</span>
+                        <span>45%</span>
+                        <!-- <div class="Line Angular"></div> -->
+                    </div>
+                    <div class="Line Angular"></div>
+                </div>
+                <div class="bars">
+                    <div class="info">
+                        <span>MySQL</span>
+                        <span>60%</span>
+                        <!-- <div class="Line mysql"></div> -->
+                    </div>
+                    <div class="Line mysql"></div>
+                </div>
+            </div>
+           </div>
+        </div>
+    </section>
+
+
+
+         <!-- Team section start -->
+        <section class="teams" id="teams">
+            <div class="max-width">
+            <h2 class= "title">My Teams</h2>
+            <div class=" carousel slide owl-carousel owl-theme" style="padding:0 5vw;">
+                <div class="item card">
+                    <div class="box">
+                    <img src="image/1620252167794.png" alt="">
+                    <h3><div class="text">Eve Porcello</div></h3>
+                    <p>She taught JavaScript , GraphQL and React tarining workshop to tech professionals around the world.We can follow her on Twitter @eveporcello or find her articles about <a href="#">www.moonhighway.com/articles</a></p>
+                    </div>
+                </div>
+            <div class="item card">
+                <div class="box">
+                <img src="image/1584723165917.jfif" alt="">
+                <h3><div class="text">Shaun Wassell</div></h3>
+                <p>He is a full-stack software developer who specializes in programming and industrial automation.He started programming in middle school with the hope of making awesome video games.</p>
+            </div>
+            </div>
+            <div class="item card">
+                <div class="box">
+                <img src="image/1576191073415.jfif" alt="">
+               <h3><div class="text">Ray Villalobos</div></h3>
+                <p>He is full- stack design/development teacher and senior staffinstructor at Linkedln Learning.His Courses are focused on front-end designsuch as Angular,JavaScript plus framework like Bootstrap.</p>
+            </div>
+        </div>
+        <div class="item card">
+            <div class="box">
+            <img src="image/1516326856396.jfif" alt="">
+           <h3><div class="text">Dmitry Grigorovich</div></h3>
+            <p>An accomplished ,motivated, hardworking and skilled Softwre Developer with a zest for a challenging work envirnment with high degree of responsibility.Proven record of successful work both independently.</p>
+        </div>
+        </div>
+        <div class="item card">
+            <div class="box">
+            <img src="image/1652931569318.jfif" alt="">
+           <h3><div class="text">Valery Lanovenko</div></h3>
+            <p>He has over 30years experience in IT industry in senior Management roles. In nov 2009 left Apple and passed into Oracle of Apple and started career in the Russian division of Hewlett-Packard.</p>
+        </div>  
+    </div>
+</div>
+            </div>
+ </section>
+
+
+
+ <!-- My works section start -->
+ <section class="myportfolio" id="myportfolio">
+    <div class=".max-width">
+    <!-- <div class="container"> -->
+        <h2 class="title">My work</h2>
+        </div>
+            <div class="work-list" style="padding:0 5vw;">
+                <div class="work" >
+                    <img src="image/work-1.png">
+                    <div class="layer">
+                        <h2> <b>Contact App</b></h2>
+                        <p><h3>The goal of this project is to build a build a Android-App in which list of the contacts which contact lists,add button ,create contacts lists ,and update a contact and delete a contacts.</h3></p>
+                        <a href="https://github.com/smritihbtu/React-native-ContactApp/tree/master/contact-app-react-native-main"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="image/work-2.png">
+                    <div class="layer">
+                        <h2><b>Spotify Clone</b> </h2>
+                        <p><h3>The goal of this project is to build a website that mimic the appearances and also some of the basic functionalities of a popular music streaming platform-spotify</h3></p>
+                        <a href="https://github.com/smritihbtu/Spotify-Clone/tree/main/Spotify%20clone"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="image/work-3.png">
+                    <div class="layer">
+                        <h2><b> Grocery Website</b></h2>
+                        <p><h3>This project goals that customer to place order gorceries Online.This website must be  user friendly and easy to navigate.Customer would be able to add items in a Cart,quantities,and make payment securely.</h3></p>
+                        <a href="https://github.com/smritihbtu/Grocery-Responsive-Website"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+                 </div>
+                </div>
+                <div class="position-relative">
+                    <a class="seemore-btn" href="https://github.com/smritihbtu" style="position:absolute;left:45%;">See more</a>
+                </div>
+                
+                <!-- <a href="#">learn more..</a> -->
+        
+ </section>
+
+
+ <!-- contact section start -->
+
+     <section class="contact" id="contact">
+         <div class="max-width">
+            <h2 class="title">Contact me</h2>
+            <!-- <form action="https://formsubmit.co/your@email.com" method="POST"> -->
+             <div class="contact-content" style="padding:0 5vw;">
+                 <div class="column left">
+                      <div class="text">Get in Touch</div>
+                       <p>Always available for freelancing if the right project comes along, Feel free to contact me.</p>
+                       <div class="icons">
+                        <div class="row">
+                             <i class="fas fa-user"></i>
+                             <div class="info">
+                                 <div class="head"><h3>Name</h3></div>
+                                 <div class="sub-title">Smriti Gupta</div>
+                                </div>
+                            </div>
+                             <div class="row">
+                                 <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                    <div class="info">
+                                         <div class="head"><h3>Address</h3></div>
+                                         <div class="sub-title">Khejuri , Ballia</div>
+                             </div>
+                            </div>
+                             <div class="row">
+                                <i class="fas fa-phone"></i>
+                                 <div class="info">
+                                    <div class="head"><h3>Contact</h3></div>
+                                    <div class="sub-title">9140695861 ,9936716461</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column right">
+                        <div class="text">Messege me</div>
+                        <form action="https://formspree.io/f/xpznwyll" method="POST">
+                        <!-- <form id="contact" method="post" action="contact-form.php"> -->
+                            <!-- <form action="#"></form> -->
+                            <div class="fields">
+                                <div class="field name">
+                                    <input type="text" name="name" placeholder="Name" required>
+                                </div>
+                                <div class="field email">
+                                    <input type="text" name="email" placeholder="Email" required>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <input type="text" name="subject" placeholder="Subject" required>
+                            </div>
+                            <div class="field textarea">
+                                <textarea cols="30" rows="10" name="message" placeholder="Message" required></textarea>
+                            </div>
+                            <div class="button">
+                                <button type="submit">Send message</button>
+                            </div>    
+                        </form>
+                    <!-- </form> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer section start -->
+        <footer>
+            <span>Created By </span><a href="#"> SMRITI </a> | <span class="far fa-copyright"></span> 2022 All right reserved.</span>
+        </footer>
+ 
+ 
+
+
+ 
+
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+ <!-- custom JS code after importing jquery and owl -->
+ <script type="text/javascript">
+     $(document).ready(function () {
+        $(".owl-carousel").owlCarousel({
+      loop:true,
+    margin:10,
+    nav:true,
+    autoplay:true,
+    autoplayTimeout:3000,
+    autoplayHoverPause:true,
+    center: true,
+    navText: [
+        "<i class='fa fa-angle-left'></i>",
+        "<i class='fa fa-angle-right'></i>"
+    ],
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:3
+        }
+    }
+  });
+     })
+ </script>   
+     <script src="script.js"></script>
+    </body>
+</html>
